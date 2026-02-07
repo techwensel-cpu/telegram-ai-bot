@@ -6,9 +6,6 @@ from openai import OpenAI
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("8269128629:AAFITu17bRqLdejAJ6SHeO2o0CQClu-Zoqg")
-OPENAI_API_KEY = os.getenv("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")
-
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
